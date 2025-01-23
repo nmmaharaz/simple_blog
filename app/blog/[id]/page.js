@@ -3,7 +3,6 @@ import blog from "@/app/lib/blog"
 export default async function page({params}) {
     const {id} = params
     const data = await blog(id)
-    console.log(data)
   return (
     <div className="w-6/12 mx-auto">
         <h2 className="text-3xl mt-4 text-purple-600 font-semibold text-center">Blog Details</h2>
