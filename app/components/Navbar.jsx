@@ -71,10 +71,8 @@ const Navbar = async() => {
         </div>
         <div className="navbar-end hidden lg:flex">
 			{
-				user?.email?<><LogoutLink><button className="btn text-purple-500 ml-4">logOut</button></LogoutLink></>:<><button className="btn text-purple-500 ml-4">
-				<LoginLink postLoginRedirectURL="/">Sign in</LoginLink>
-			  </button>
-			  
+				user?.email?<><LogoutLink><button className="btn text-purple-500 ml-4">logOut</button></LogoutLink></>:<>
+				<LoginLink postLoginRedirectURL="/"><button className="btn text-purple-500 ml-4">Sign in</button></LoginLink>
 			  <button className="btn text-purple-500 ml-4">
 				<RegisterLink postLoginRedirectURL="/">Sign up</RegisterLink>
 			  </button></>
